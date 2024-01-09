@@ -37,7 +37,7 @@ public class MainController
 	
 	@PutMapping("/edtMother")
 	@ResponseBody
-	public ResponseDto edtMother(@RequestParam("mother_id") 	long mId, @RequestParam("child_id") long...cId)
+	public ResponseDto edtMother(@RequestParam("mother_id") long mId, @RequestParam("child_id") long...cId)
 	{
 		return motherservice.editMother(mId, cId);
 	}
